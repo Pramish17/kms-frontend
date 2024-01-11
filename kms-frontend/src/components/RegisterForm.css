@@ -1,0 +1,10 @@
+s.container-fluid {
+    backdrop-filter: blur(6px); /* Adjust the blur value as needed */
+  }
+  
+  .card {
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the opacity as needed */
+  }
+
+
+  
