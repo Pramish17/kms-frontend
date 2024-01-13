@@ -1,4 +1,4 @@
-s.container-fluid {
+.container-fluid {
     backdrop-filter: blur(6px); /* Adjust the blur value as needed */
   }
   

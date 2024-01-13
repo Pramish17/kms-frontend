@@ -6,7 +6,11 @@ import RegisterForm from './components/RegisterForm'
 import LoginForm from './components/LoginForm'
 import Horizontal from './Layouts/Horizontal'
 import Fulllayout from './Layouts/Fulllayout'
-import Login from './components/Login'
+import StaffLogin from './components/StaffLogin'
+import AdminLogin from './components/AdminLogin'
+import ClientLogin from './components/ClientLogin'
+import News from './components/News'
+import ClientFeedback from './components/ClientFeedback'
 
 
 function App() {
@@ -24,6 +28,11 @@ function App() {
             <Route path='add-user' element={<UserComponent />}></Route>
             {/* http://localhost:5000/edit-user/1 */}
             <Route path='edit-user/:id' element={<UserComponent />}></Route>
+              {/* http://localhost:5000/news-page*/}
+              <Route path='news-page' element={<News />}></Route>
+              {/* http://localhost:5000/clientfeedback-page*/}
+              <Route path='clientfeedback-page' element={<ClientFeedback />}></Route>
+
           </Route>
 
           <Route path='/' element={<Fulllayout />}>
@@ -31,12 +40,16 @@ function App() {
             <Route path='register' element={<RegisterForm />}></Route>
             {/* http://localhost:5000/login*/}
             <Route path='login' element={<LoginForm />}></Route>
-            {/* http://localhost:5000/login-page*/}
-            <Route path='login-page' element={<Login />}></Route>
-            
+            {/* http://localhost:5000/staff-login-page*/}
+            <Route path='staff-login-page' element={<StaffLogin />}></Route>
+            {/* http://localhost:5000/admin-login-page*/}
+            <Route path='admin-login-page' element={<AdminLogin />}></Route>
+            {/* http://localhost:5000/client-login-page*/}
+            <Route path='client-login-page' element={<ClientLogin />}></Route>
+          
           </Route>
-
         </Routes>
+
 
       </BrowserRouter>
     </>
