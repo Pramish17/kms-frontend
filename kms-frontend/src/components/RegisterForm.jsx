@@ -41,7 +41,6 @@ function onClickLoginHere(){
                 <div className='card col-md-4  mt-3 '>
                     <div className='card-body p-5'>
                         <h2 class="text-uppercase text-center mb-5">Create an account</h2>
-                        {/* <form className="needs-validation" novalidate> */}
                         <form>
                             <div className='form-group mb-3'>
                                 FirstName:

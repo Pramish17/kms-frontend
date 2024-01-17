@@ -6,7 +6,24 @@ import RegisterForm from './components/RegisterForm'
 import LoginForm from './components/LoginForm'
 import Horizontal from './Layouts/Horizontal'
 import Fulllayout from './Layouts/Fulllayout'
-import Login from './components/Login'
+import StaffLogin from './components/StaffLogin'
+import AdminLogin from './components/AdminLogin'
+import ClientLogin from './components/ClientLogin'
+import News from './components/News'
+import StaffBiography from './components/StaffBiography'
+import BeenzPointPage from './components/BeenzPointPage'
+import ClientLayout from './Layouts/ClientLayout'
+import Feedback from './components/Feedback'
+import StaffLayout from './Layouts/StaffLayout'
+import StaffBiographyStaffPage from './components/StaffBiographyStaffPage'
+import StaffProjectPage from './components/StaffProjectPage'
+import StaffTraining from './components/StaffTraining'
+import NewsStaffPage from './components/NewsStaffPage'
+import FeedbackStaffPage from './components/FeedbackStaffPage'
+import StaffProfile from './components/StaffProfile'
+import ClientProfile from './components/ClientProfile'
+import ProjectClient from './components/ProjectClient'
+import ClientDocument from './components/ClientDocument'
 
 
 function App() {
@@ -31,12 +48,47 @@ function App() {
             <Route path='register' element={<RegisterForm />}></Route>
             {/* http://localhost:5000/login*/}
             <Route path='login' element={<LoginForm />}></Route>
-            {/* http://localhost:5000/login-page*/}
-            <Route path='login-page' element={<Login />}></Route>
-            
+            {/* http://localhost:5000/staff-login-page*/}
+            <Route path='staff-login-page' element={<StaffLogin />}></Route>
+            {/* http://localhost:5000/admin-login-page*/}
+            <Route path='admin-login-page' element={<AdminLogin />}></Route>
+            {/* http://localhost:5000/client-login-page*/}
+            <Route path='client-login-page' element={<ClientLogin />}></Route>
           </Route>
 
+          <Route path='/' element={<ClientLayout />}>
+            {/* http://localhost:5000/news-page*/}
+            <Route path='news-page' element={<News />}></Route>
+            {/* http://localhost:5000/feedback-page*/}
+            <Route path='feedback-page' element={<Feedback />}></Route>
+            {/* http://localhost:5000/staffbiography-page*/}
+            <Route path='staffbiography-page' element={<StaffBiography />}></Route>
+             {/* http://localhost:5000/clientprofile-page*/}
+             <Route path='clientprofile-page' element={<ClientProfile />}></Route>
+             {/* http://localhost:5000/projectclient-page*/}
+             <Route path='projectclient-page' element={<ProjectClient />}></Route>
+              {/* http://localhost:5000/clientdocument-page*/}
+              <Route path='clientdocument-page' element={<ClientDocument />}></Route>
+          </Route>
+
+          <Route path='/' element={<StaffLayout />}>
+            {/* http://localhost:5000/staffnews-page*/}
+            <Route path='newsstaff-page' element={<NewsStaffPage />}></Route>
+            {/* http://localhost:5000/feedbackstaff-page*/}
+            <Route path='feedbackstaff-page' element={<FeedbackStaffPage />}></Route>
+            {/* http://localhost:5000/staffbiographystaff-page*/}
+            <Route path='staffbiographystaff-page' element={<StaffBiographyStaffPage />}></Route>
+            {/* http://localhost:5000/stafftraining-page*/}
+            <Route path='stafftraining-page' element={<StaffTraining />}></Route>
+            {/* http://localhost:5000/staffproject-page*/}
+            <Route path='staffproject-page' element={<StaffProjectPage />}></Route>
+            {/* http://localhost:5000/beenzpoint-page*/}
+            <Route path='beenzpoint-page' element={<BeenzPointPage />}></Route>
+            {/* http://localhost:5000/staffprofile-page*/}
+            <Route path='staffprofile-page' element={<StaffProfile />}></Route>
+          </Route>
         </Routes>
+
 
       </BrowserRouter>
     </>

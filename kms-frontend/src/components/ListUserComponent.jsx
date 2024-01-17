@@ -44,7 +44,7 @@ const listUserComponent = () => {
         <div className='container'>
             <h2 className='text-center pt-5'>Welcome to admin section!</h2>
             <button className='btn btn-primary' onClick={addNewUser}>Add User</button>
-            <table className='table table-striped table-bordered'>
+            <table className='table table-striped table-bordered mb-5 mt-2'>
                 <thead>
                     <tr>
                         <th>User Id</th>
