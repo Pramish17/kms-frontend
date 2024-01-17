@@ -23,6 +23,7 @@ import FeedbackStaffPage from './components/FeedbackStaffPage'
 import StaffProfile from './components/StaffProfile'
 import ClientProfile from './components/ClientProfile'
 import ProjectClient from './components/ProjectClient'
+import ClientDocument from './components/ClientDocument'
 
 
 function App() {
@@ -66,6 +67,8 @@ function App() {
              <Route path='clientprofile-page' element={<ClientProfile />}></Route>
              {/* http://localhost:5000/projectclient-page*/}
              <Route path='projectclient-page' element={<ProjectClient />}></Route>
+              {/* http://localhost:5000/clientdocument-page*/}
+              <Route path='clientdocument-page' element={<ClientDocument />}></Route>
           </Route>
 
           <Route path='/' element={<StaffLayout />}>

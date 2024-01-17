@@ -24,6 +24,9 @@ const ClientHeader = () => {
                      <a class="nav-link text-light" href="http://localhost:5000/projectclient-page">Project</a>
                   </li>
                   <li class="nav-item ">
+                     <a class="nav-link text-light" href="http://localhost:5000/clientdocument-page">Document</a>
+                  </li>
+                  <li class="nav-item ">
                      <a class="nav-link text-light" href="http://localhost:5000/staffbiography-page">Staff Biography</a>
                   </li>
                   <li class="nav-item ">
